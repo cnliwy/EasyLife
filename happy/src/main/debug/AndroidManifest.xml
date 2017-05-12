@@ -4,8 +4,9 @@
     <application android:allowBackup="true"
         android:icon="@mipmap/mhappy_ic_launcher"
         android:supportsRtl="true"
+        android:name="com.liwy.easylibrary.base.EasyApplication"
         android:theme="@style/mhappy_AppTheme">
-        <activity android:name=".HappyActivity">
+        <activity android:name=".controllers.joke.JokeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
