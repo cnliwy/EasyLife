@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="themeColor">@color/colorPrimary</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="text_black_1">#474747</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="tab_background">#fff5f5f5</color>
+
+    <color name="text_gray_6">#666666</color>
+    <color name="text_gray_1">#808080</color>
+    <color name="divider_gray_line">#cccccc</color>
+
+    <color name="listview_divider_line">#F5F5F5</color>
+
+    <color name="red">#F44336</color>
+    <color name="blue">#2196F3</color>
+    <color name="grey">#9E9E9E</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="grey_900">#212121</color>
+    <color name="translucent_white">#80FFFFFF</color>
+    <color name="translucent_black">#80000000</color>
+    <color name="translucent_grey">#809E9E9E</color>
+    <color name="translucent_white_8p">#14FFFFFF</color>
+    <color name="translucent_white_16p">#29FFFFFF</color>
+    <color name="translucent_white_24p">#3DFFFFFF</color>
+    <!--play bar-->
+    <color name="translucent_white_96p">#F5FFFFFF</color>
+    <color name="translucent_grey_300_96p">#F5E0E0E0</color>
+    <color name="translucent_grey_900_96p">#F5212121</color>
+    <color name="translucent_grey_700_96p">#F5616161</color>
+    <!--indictor-->
+    <color name="nav_background_color">#FAFAFA</color>
+    <color name="nav_text_color_def">#AAAAAA</color>
+    <color name="nav_text_color_sel">#2BBDD4</color>
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="mhappy_AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/mhappy_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/mhappy_colorPrimaryDark</item>
+        <item name="colorAccent">@color/mhappy_colorAccent</item>
+    </style>
+
+</resources>
