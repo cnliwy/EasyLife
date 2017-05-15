@@ -3,9 +3,19 @@
 
     <application android:allowBackup="true"
         android:supportsRtl="true">
-
         <activity android:name=".MainActivity">
         </activity>
+
+        <activity android:name=".controllers.MusicActivity">
+        </activity>
+
+        <service android:name=".service.PlayService" />
+
+        <receiver android:name=".receiver.StatusBarReceiver">
+            <intent-filter>
+                <action android:name="me.wcy.music.STATUS_BAR_ACTIONS" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

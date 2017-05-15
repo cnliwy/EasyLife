@@ -4,12 +4,22 @@
     <application android:allowBackup="true" android:icon="@mipmap/music_ic_launcher"
         android:label="@string/music_app_name"
         android:supportsRtl="true" android:theme="@style/music_AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".controllers.MusicActivity"
+            android:launchMode="singleTask" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+
+            <service android:name=".service.playmusic.PlayService" />
+
+            <receiver android:name=".receiver.StatusBarReceiver">
+                <intent-filter>
+                    <action android:name="me.wcy.music.STATUS_BAR_ACTIONS" />
+                </intent-filter>
+            </receiver>
         </activity>
     </application>
 

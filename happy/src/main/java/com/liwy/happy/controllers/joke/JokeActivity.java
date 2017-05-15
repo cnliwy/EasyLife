@@ -8,6 +8,7 @@ import android.view.View;
 import com.github.mzule.activityrouter.annotation.Router;
 import com.liwy.easylibrary.adapter.FragmentAdapter;
 import com.liwy.easylibrary.base.BaseActivity;
+import com.liwy.easylibrary.base.BaseSlideActivity;
 import com.liwy.easylibrary.views.tabindicator.EasyIndicator;
 import com.liwy.easylibrary.views.tabindicator.TabBean;
 import com.liwy.easylibrary.views.tabindicator.TabConfig;
@@ -25,7 +26,7 @@ import butterknife.BindView;
 
 
 @Router("joke")
-public class JokeActivity extends BaseActivity<JokePresenter> implements JokeView {
+public class JokeActivity extends BaseSlideActivity<JokePresenter> implements JokeView {
 
     @BindView(R2.id.mhappy_viewpager)
     ViewPager viewPager;
@@ -42,7 +43,7 @@ public class JokeActivity extends BaseActivity<JokePresenter> implements JokeVie
         initToolbarWithBack(TOOLBAR_MODE_CENTER, "开心一刻", 0, new OnLeftClickListener() {
             @Override
             public void onLeftClick() {
-                drawerLayout.openDrawer(Gravity.LEFT);
+                manageLayout.openDrawer(Gravity.LEFT);
             }
         });
         initSlideMenu();

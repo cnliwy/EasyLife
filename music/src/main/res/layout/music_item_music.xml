@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/ll_item_view"
+    android:layout_height="70dp">
+    <LinearLayout
+        android:id="@+id/item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_music"
+                android:scaleType="centerCrop"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:text="音乐名称"
+                android:layout_toRightOf="@+id/iv_music"
+                android:id="@+id/tv_music_name"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:text="歌手"
+                android:layout_toRightOf="@+id/iv_music"
+                android:id="@+id/tv_music_art"
+                android:textColor="@color/music_text_gray_6"
+                android:textSize="12sp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/music_divider_gray_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"/>
+
+</RelativeLayout>

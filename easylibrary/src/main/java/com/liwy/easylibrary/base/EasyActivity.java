@@ -58,55 +58,6 @@ public abstract class EasyActivity extends AppCompatActivity {
     @Nullable
     public TextView toolbarRight;
 
-    // 左侧滑动菜单控件
-    @Nullable
-//    @BindView(R2.id.id_lv_left_menu)
-    public ListView mLvLeftMenu;
-
-    @Nullable
-//    @BindView(R2.id.fd)
-    public DrawerLayout drawerLayout;
-
-    public List<SlideItem> mItems = new ArrayList<SlideItem>(
-            Arrays.asList(
-                    new SlideItem(R.drawable.ic_slide_music, "听雨楼"),
-                    new SlideItem(R.drawable.ic_slide_happy, "欢乐谷"),
-                    new SlideItem(R.drawable.ic_slide_happy, "微博"),
-                    new SlideItem(R.drawable.ic_slide_time, "定时关闭音乐"),
-                    new SlideItem(R.drawable.ic_slide_exit, "退出")
-
-            ));
-
-    // 初始化侧滑菜单
-    public void initSlideMenu() {
-        mLvLeftMenu = (ListView)findViewById(R.id.id_lv_left_menu);
-        drawerLayout = (DrawerLayout)findViewById(R.id.fd);
-        LayoutInflater inflater = LayoutInflater.from(this);
-        mLvLeftMenu.addHeaderView(inflater.inflate(R.layout.nav_header_main, mLvLeftMenu, false));
-        mLvLeftMenu.setAdapter(new SlideItemAdapter(this,mItems));
-        mLvLeftMenu.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                drawerLayout.closeDrawers();
-                switch (position) {
-                    case 1:
-                        showToast("听雨楼");
-                        break;
-                    case 2:
-                        Routers.open(mContext, Uri.parse("easy://joke"));
-                        break;
-                    case 3:
-                        showToast("微博");
-                        break;
-                    case 4:
-                        break;
-                    case 5:
-                        break;
-                }
-            }
-        });
-    }
-
 
     /**
      * 获取layout的id，由子类实现

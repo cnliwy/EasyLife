@@ -4,10 +4,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.github.mzule.activityrouter.annotation.Router;
+/**
+ * Created by liwy on 2017/5/15.
+ */
 
-
-
-@Router("music")
 public class MainActivity extends AppCompatActivity {
 
     @Override

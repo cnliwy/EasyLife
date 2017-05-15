@@ -3,4 +3,32 @@
     <color name="music_colorPrimary">#3F51B5</color>
     <color name="music_colorPrimaryDark">#303F9F</color>
     <color name="music_colorAccent">#FF4081</color>
+
+    <color name="music_white">#ffffff</color>
+    <color name="music_black">#000000</color>
+    <color name="music_text_black_1">#474747</color>
+    <color name="music_black_overlay">#66000000</color>
+    <color name="music_tab_background">#fff5f5f5</color>
+    <color name="music_text_gray_6">#666666</color>
+    <color name="music_text_gray_1">#808080</color>
+    <color name="music_divider_gray_line">#cccccc</color>
+    <color name="music_listview_divider_line">#F5F5F5</color>
+    <color name="music_red">#F44336</color>
+    <color name="music_blue">#2196F3</color>
+    <color name="music_grey">#9E9E9E</color>
+    <color name="music_grey_300">#E0E0E0</color>
+    <color name="music_grey_900">#212121</color>
+    <color name="music_translucent_white">#80FFFFFF</color>
+    <color name="music_translucent_black">#80000000</color>
+    <color name="music_translucent_grey">#809E9E9E</color>
+    <color name="music_translucent_white_8p">#14FFFFFF</color>
+    <color name="music_translucent_white_16p">#29FFFFFF</color>
+    <color name="music_translucent_white_24p">#3DFFFFFF</color>
+    <color name="music_translucent_white_96p">#F5FFFFFF</color>          <!--play bar-->
+    <color name="music_translucent_grey_300_96p">#F5E0E0E0</color>
+    <color name="music_translucent_grey_900_96p">#F5212121</color>
+    <color name="music_translucent_grey_700_96p">#F5616161</color>
+    <color name="music_nav_background_color">#FAFAFA</color>             <!--indictor-->
+    <color name="music_nav_text_color_def">#AAAAAA</color>
+    <color name="music_nav_text_color_sel">#2BBDD4</color>
 </resources>

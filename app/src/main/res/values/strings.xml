@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">EasyLife</string>
     <string name="scheme">easy</string>
+    <string name="author">暮醉南山</string>
 </resources>

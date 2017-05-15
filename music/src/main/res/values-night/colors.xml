@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="music_colorPrimary">@color/grey_900</color>
+    <color name="music_colorPrimaryDark">@color/colorPrimary</color>
+    <color name="music_colorAccent">@color/colorPrimary</color>
+</resources>
