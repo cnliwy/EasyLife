@@ -5,8 +5,6 @@
         android:allowBackup="true"
         android:supportsRtl="true"
         >
-        <activity android:name=".HappyActivity">
-        </activity>
         <activity android:name=".controllers.joke.JokeActivity">
         </activity>
     </application>
