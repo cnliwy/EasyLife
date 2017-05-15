@@ -11,6 +11,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/easylibrary" />
             <option value="$PROJECT_DIR$/happy" />
+            <option value="$PROJECT_DIR$/music" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

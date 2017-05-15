@@ -22,10 +22,12 @@ android {
 dependencies {
     if (!isDebug.toBoolean()) {
         compile project(':happy')
+        compile project(':music')
     } else {
         compile project(':easylibrary')
     }
     compile 'com.jakewharton:butterknife:8.5.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
     annotationProcessor 'com.github.mzule.activityrouter:compiler:1.1.7'
 }

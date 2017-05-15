@@ -7,9 +7,9 @@ import android.widget.Button;
 
 import com.github.mzule.activityrouter.router.Routers;
 import com.liwy.easylibrary.base.EasyActivity;
-import com.liwy.easylibrary.common.ToastUtils;
 
 import butterknife.BindView;
+
 
 public class MainActivity extends EasyActivity {
 
@@ -18,6 +18,9 @@ public class MainActivity extends EasyActivity {
 
     @BindView(R.id.btn_weibo)
     Button weiboBtn;
+
+    @BindView(R.id.btn_music)
+    Button musicBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,16 +32,23 @@ public class MainActivity extends EasyActivity {
 
             }
         });
+
+        musicBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Routers.open(mContext,Uri.parse("easy://music"));
+            }
+        });
         jokeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Routers.open(MainActivity.this, Uri.parse("easy://joke"));
+                Routers.open(mContext, Uri.parse("easy://joke"));
             }
         });
         weiboBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showToast("正在开发");
+                Routers.open(mContext, Uri.parse("easy://weibo"));
             }
         });
     }
