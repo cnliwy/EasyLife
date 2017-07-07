@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.liwy.easylife">
+
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
@@ -19,8 +20,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".NotFoundActivity"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".NotFoundActivity" />
         <!-- -配置路由跳转框架 -->
         <activity
             android:name="com.github.mzule.activityrouter.router.RouterActivity"

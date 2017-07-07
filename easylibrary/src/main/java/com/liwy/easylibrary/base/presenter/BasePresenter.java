@@ -2,6 +2,8 @@ package com.liwy.easylibrary.base.presenter;
 
 import android.app.Activity;
 import android.content.Context;
+import android.os.Bundle;
+import android.support.annotation.Nullable;
 
 import com.liwy.easylibrary.base.view.IView;
 
@@ -60,7 +62,7 @@ public class BasePresenter<V extends IView> implements IPresenter {
     }
 
     @Override
-    public void onCreate() {
+    public void onCreate(@Nullable Bundle savedInstanceState) {
 
     }
 

@@ -51,6 +51,7 @@ dependencies {
     compile 'com.github.bumptech.glide:glide:3.7.0'
     compile 'com.journeyapps:zxing-android-embedded:3.3.0'
     compile 'com.github.mzule.activityrouter:activityrouter:1.2.2'
+    compile 'com.liwy.easyhttp:easyhttp:1.0.5'
     testCompile 'junit:junit:4.12'
     testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'

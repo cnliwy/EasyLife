@@ -3,6 +3,8 @@ package com.liwy.music.controllers;
 
 import android.content.ComponentName;
 import android.media.AudioManager;
+import android.os.Bundle;
+import android.support.annotation.Nullable;
 
 
 import com.liwy.easylibrary.base.presenter.BasePresenter;
@@ -17,8 +19,8 @@ public class MusicPresenter extends BasePresenter<MusicView> {
     private ComponentName mRemoteReceiver;
 
     @Override
-    public void onCreate() {
-        super.onCreate();
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         registerReceiver();
     }
 

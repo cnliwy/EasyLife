@@ -230,7 +230,7 @@ public class FileUtil {
      * @param keyword
      * @return
      */
-    public static List<File> FindFile(File file, String keyword) {
+    public static List<File> findFile(File file, String keyword) {
         List<File> list = new ArrayList<File>();
         if (file.isDirectory()) {
             File[] files = file.listFiles();
@@ -240,7 +240,7 @@ public class FileUtil {
                         if (tempf.getName().toLowerCase().lastIndexOf(keyword) > -1) {
                             list.add(tempf);
                         }
-                        list.addAll(FindFile(tempf, keyword));
+                        list.addAll(findFile(tempf, keyword));
                     } else {
                         if (tempf.getName().toLowerCase().lastIndexOf(keyword) > -1) {
                             list.add(tempf);
@@ -380,11 +380,11 @@ public class FileUtil {
      */
     public static String changeFileSize(String size) {
         if (Integer.parseInt(size) > 1024) {
-            size = Integer.parseInt(size) / 1024 + "K";
+            size = Integer.parseInt(size) / 1024 + "Kb";
         } else if (Integer.parseInt(size) > (1024 * 1024)) {
-            size = Integer.parseInt(size) / (1024 * 1024) + "M";
+            size = Integer.parseInt(size) / (1024 * 1024) + "Mb";
         } else if (Integer.parseInt(size) > (1024 * 1024 * 1024)) {
-            size = Integer.parseInt(size) / (1024 * 1024 * 1024) + "G";
+            size = Integer.parseInt(size) / (1024 * 1024 * 1024) + "Gb";
         } else {
             size += "B";
         }
