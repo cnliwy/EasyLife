@@ -76,11 +76,6 @@ public class BaseFragmentPresenter<V extends IView> implements IFragmentPresente
     }
 
     @Override
-    public void onCreate() {
-
-    }
-
-    @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
 
     }

@@ -29,7 +29,7 @@ public abstract class BaseActivity<T extends BasePresenter> extends EasyActivity
         super.onCreate(savedInstanceState);
         // 初始化presenter
         initPresenter();
-        mPresenter.onCreate();
+        mPresenter.onCreate(savedInstanceState);
     }
 
     @Override

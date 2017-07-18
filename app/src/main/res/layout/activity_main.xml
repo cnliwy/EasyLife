@@ -3,40 +3,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context="com.liwy.easylife.MainActivity">
-
-
-    <include layout="@layout/toolbar_layout"></include>
+    tools:context="com.liwy.easylife.controllers.main.MainActivity">
+    <!--<com.github.florent37.materialviewpager.MaterialViewPager-->
+        <!--android:id="@+id/materialViewPager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--app:viewpager_logo="@layout/header_logo"-->
+        <!--app:viewpager_logoMarginTop="100dp"-->
+        <!--app:viewpager_color="@color/colorPrimary"-->
+        <!--app:viewpager_headerHeight="200dp"-->
+        <!--app:viewpager_headerAlpha="1.0"-->
+        <!--app:viewpager_hideLogoWithFade="false"-->
+        <!--app:viewpager_hideToolbarAndTitle="true"-->
+        <!--app:viewpager_enableToolbarElevation="true"-->
+        <!--app:viewpager_parallaxHeaderFactor="1.5"-->
+        <!--app:viewpager_headerAdditionalHeight="20dp"-->
+        <!--app:viewpager_displayToolbarWhenSwipe="true"-->
+        <!--app:viewpager_transparentToolbar="true"-->
+        <!--app:viewpager_animatedHeaderImage="true"-->
+        <!--app:viewpager_disableToolbar="false"-->
+        <!--/>-->
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"/>
 
     <Button
-        android:id="@+id/btn_music"
+        android:id="@+id/btn_send"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:textColor="#ffffff"
-        android:background="@color/colorPrimary"
-        android:text="音乐"
-        />
-
-    <Button
-        android:id="@+id/btn_joke"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:textColor="#ffffff"
-        android:background="@color/colorPrimary"
-        android:text="笑话"
-        />
-
-    <Button
-        android:id="@+id/btn_weibo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:textColor="#ffffff"
-        android:background="@color/colorPrimary"
-        android:text="微博"
-        />
+        android:text="发送通知"/>
 
 </LinearLayout>

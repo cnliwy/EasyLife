@@ -50,7 +50,7 @@ public abstract class BaseSlideActivity<T extends BasePresenter> extends EasyAct
         super.onCreate(savedInstanceState);
         // 初始化presenter
         initPresenter();
-        mPresenter.onCreate();
+        mPresenter.onCreate(savedInstanceState);
     }
 
     @Override

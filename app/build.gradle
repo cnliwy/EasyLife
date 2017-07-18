@@ -10,6 +10,18 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'x86'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME : applicationId,
+                JPUSH_APPKEY : "5bf4234604598342f195d35a", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL : "cnliwy", //暂时填写默认值即可.
+        ]
     }
     buildTypes {
         release {
@@ -28,6 +40,10 @@ dependencies {
     }
     compile 'com.jakewharton:butterknife:8.5.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    compile 'cn.jiguang.sdk:jpush:3.0.7'  // 此处以JPush 3.0.3 版本为例。
+    compile 'cn.jiguang.sdk:jcore:1.1.5'  // 此处以JCore 1.1.1 版本为例。
+
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
     annotationProcessor 'com.github.mzule.activityrouter:compiler:1.1.7'
 }

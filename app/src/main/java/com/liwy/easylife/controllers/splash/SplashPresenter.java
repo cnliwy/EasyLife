@@ -6,10 +6,13 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
+import android.os.Bundle;
 import android.os.IBinder;
+import android.support.annotation.Nullable;
 
 import com.liwy.easylibrary.base.presenter.BasePresenter;
 import com.liwy.easylibrary.common.ToastUtils;
+import com.liwy.easylife.controllers.main.MainActivity;
 import com.liwy.music.controllers.MusicActivity;
 import com.liwy.music.service.AppCache;
 import com.liwy.music.service.PlayService;
@@ -30,8 +33,8 @@ public class SplashPresenter extends BasePresenter<SplashView> {
     private ServiceConnection mPlayServiceConnection;
 
     @Override
-    public void onCreate() {
-        super.onCreate();
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         AppCache.init(mContext);
     }
 
@@ -46,7 +49,8 @@ public class SplashPresenter extends BasePresenter<SplashView> {
        Observable.timer(2000, TimeUnit.MILLISECONDS).observeOn(AndroidSchedulers.mainThread()).subscribe(new Action1<Long>() {
            @Override
            public void call(Long aLong) {
-               mView.turnToActivityWithFinish(MusicActivity.class);
+//               mView.turnToActivityWithFinish(MusicActivity.class);
+               mView.turnToActivityWithFinish(MainActivity.class);
            }
        });
    }

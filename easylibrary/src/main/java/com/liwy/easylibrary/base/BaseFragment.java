@@ -74,7 +74,7 @@ public abstract class BaseFragment<T extends BaseFragmentPresenter> extends Easy
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mPresenter.onCreate();
+        mPresenter.onCreate(savedInstanceState);
     }
 
     @Override
